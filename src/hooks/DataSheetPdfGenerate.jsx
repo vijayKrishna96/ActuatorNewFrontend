@@ -99,7 +99,7 @@ const transformData = (apiData) => {
         actuatorPartNumber: apiData.partNumber || `${apiData.series}-${apiData.actuatorSize}` || "Part Number Not Available"
       },
       valveInfo: {
-        "Brand/Make": `${apiData.valveInfo?.stemDiameter?.value || ''} ${apiData.valveInfo?.stemDiameter?.unit || ''}`,
+        "Brand/Make": ``,
         "Valve Type": apiData.valveInfo?.valveType || "N/A",
         "Valve Size": apiData.valveInfo?.valveSize || "mm",
         "Series/Model": apiData.valveInfo?.seriesModel || "",
