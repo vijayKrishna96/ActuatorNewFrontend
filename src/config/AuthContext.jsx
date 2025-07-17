@@ -11,7 +11,7 @@ const AuthProvider = ({ children }) => {
 
     useEffect(() => {
         if(token){
-            fetch("http://localhost:5000/api/auth/me", {
+            fetch(`${import.meta.env.VITE_BASE_URL}${import.meta.env.VITE_CHECK_TOKEN}`, {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -24,7 +24,7 @@ const AuthProvider = ({ children }) => {
     }, [token]);
 
     const login = async (email , password) => {
-        const res = await fetch("http://localhost:5000/api/auth/login",{
+        const res = await fetch(`${import.meta.env.VITE_BASE_URL}${import.meta.env.VITE_LOGIN}`,{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
