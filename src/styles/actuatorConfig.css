@@ -1,0 +1,216 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.pannel {
+  padding: 1rem;
+  background-color: #f7fafc;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+label{
+  font-size: 14px;
+}
+
+.label{
+  color: #08549c;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.input-group span {
+  margin-left: 2.5rem;
+}
+
+.input-field-level1{
+  width: 4.5rem;
+  background: #e5e7eb;
+  padding: 0.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+}
+
+.input-level2{
+  width: 5.5rem;
+  background: #e5e7eb;
+  padding: 0.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+}
+
+.input-label {
+  width: 8rem;
+  color: #4a5568;
+}
+
+.input-field {
+  padding: 0.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+}
+
+.small {
+  width: 4rem;
+  margin-left: 3.5rem;
+  margin-right: 2.5rem;
+}
+
+.dropdown {
+  padding: 0.25rem;
+  width: 4.5rem;
+  background: #e5e7eb;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+}
+.dropdown-level2 {
+  width: 12.5rem;
+  padding: 0.25rem;
+  background: #e5e7eb;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+}
+.dropdown-level3 {
+  width: 17.5rem;
+  padding: 0.25rem;
+  background: #e5e7eb;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+}
+
+.mop-label {
+  margin-left: 1.5rem;
+}
+
+.button {
+  margin-left: 3rem;
+  padding: 0.5rem 1rem;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.checkbox-group {
+  margin-top: 0.5rem;
+  border: 1px solid black;
+  padding: 0.25rem;
+  width: 52%;
+  justify-content: space-between;
+}
+
+.checkbox-group label {
+  margin-right: 1rem;
+}
+
+.part-number {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.part-number label {
+  font-weight: bold;
+  color: #08549c;
+  font-size: 14px;
+}
+
+.part-number div{
+  font-weight: bold;
+}
+
+.part-value {
+  margin-top: 0.25rem;
+  padding: 0.25rem;
+  font-size: 2rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+/* LEFT PANNEL */
+
+.valve-info-header{
+  font-size: 14px;
+  font-weight: bold;
+  color: #08549c;
+  margin-bottom: 5px;
+}
+
+.grid-item{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.valve-input-level1{
+  width: 6.5rem;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.info{
+  display: flex;
+  gap: 1.4rem;
+}
+
+.info label{
+  margin-right: 25px;
+}
+
+.valve-input-level2{
+  width:65%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.yellow-bg {
+  background-color: #fefcbf;
+}
+
+.valve-radio-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid-item2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 9.5rem;
+}
+.grid-item-valve{
+  display: flex;
+  gap: 5rem;
+}
+
+.valve-input{
+  width: 4.5rem;
+  height: 2rem;
+  background: #e5e7eb;
+  padding: 0.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+}
+
+
+.grid-item-valve span {
+  margin-left: 5px; /* Adjust spacing between input and Nm */
+}
+
+.grid-item-valve label{
+  width: 7rem;
+}

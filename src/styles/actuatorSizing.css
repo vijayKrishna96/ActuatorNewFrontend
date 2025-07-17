@@ -1,0 +1,530 @@
+/* Main Container */
+.actuator-sizing-container {
+  padding: 16px;
+  background-color: #f5f5f5;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Top Section */
+.top-section {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.valve-info-section {
+  width: 25%;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.torque-section {
+  width: 75%;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Valve Information Section */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #08549c;
+}
+
+.clear-button {
+  background-color: #08549c;
+  color: white;
+  padding: 4px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.clear-button:hover {
+  background-color: #042a91;
+}
+
+.valve-info-content {
+  margin-top: 24px;
+}
+
+.valve-type-row,
+.safety-factor-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.valve-type-select {
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-weight: 600;
+  border: 1px solid #d1d5db;
+}
+
+.safety-factor-input {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: 56px;
+  background-color: #fef3c7;
+  text-align: center;
+  font-weight: 600;
+}
+
+.stem-diameter-section {
+  margin-bottom: 16px;
+}
+
+.stem-diameter-title {
+  color: #08549c;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.stem-diameter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stem-unit-options {
+  display: flex;
+  gap: 12px;
+}
+
+.stem-unit-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stem-unit-text {
+  font-weight: 600;
+}
+
+.stem-diameter-input {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: 64px;
+}
+
+/* Torque Section */
+.torque-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.torque-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.torque-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.torque-label {
+  width: 112px;
+  color: #08549c;
+  font-weight: 600;
+}
+
+.valve-count-select {
+  width: 144px;
+  height: 28px;
+  margin-left: 8px;
+  border-radius: 4px;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+}
+
+.torque-column-title {
+  color: #08549c;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Input Components */
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.input-label {
+  width: 144px;
+}
+
+.input-field {
+  width: 96px;
+  height: 28px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  padding: 0 8px;
+}
+
+.input-field:disabled {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+.input-unit {
+  margin-left: 8px;
+}
+
+.sf-input-container {
+  margin-bottom: 8px;
+}
+
+.sf-input {
+  width: 96px;
+  height: 28px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  padding: 0 8px;
+}
+
+/* Bottom Section */
+.bottom-section {
+  display: flex;
+  gap: 12px;
+}
+
+.image-placeholder-section {
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder-content {
+  text-align: center;
+  padding: 32px;
+  color: #9ca3af;
+}
+
+.placeholder-image {
+  width: 128px;
+  height: 128px;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-text {
+  font-size: 12px;
+}
+
+.placeholder-description {
+  font-size: 12px;
+  margin: 0;
+}
+
+.actuator-selector-section {
+  width: 75%;
+  background-color: white;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 400px;
+}
+
+.actuator-selector-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  height: 250px;
+}
+
+/* Actuator Series Column */
+.actuator-series-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.actuator-series-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #08549c;
+}
+
+.actuator-series-options {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.series-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.series-enabled {
+  color: black;
+}
+
+.series-disabled {
+  color: #9ca3af;
+}
+
+.supply-pressure-section {
+  margin-top: 16px;
+}
+
+.supply-pressure-label {
+  font-weight: bold;
+  display: block;
+  color: #08549c;
+  margin-bottom: 4px;
+}
+
+.supply-pressure-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.supply-pressure-select {
+  background-color: #e5e7eb;
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: 96px;
+  border: 1px solid #d1d5db;
+}
+
+/* Actuator Type Column */
+.actuator-type-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.actuator-type-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #08549c;
+}
+
+.ped-option-section{
+  display: flex;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 16px;
+  gap: 12px;
+  width: 80%;
+}
+
+.yoke-type-section
+ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 16px;
+}
+
+.yoke-type-title,
+.ped-option-title {
+  color: #08549c;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.yoke-type-options,
+.ped-option-options {
+  display: flex;
+  gap: 14px;
+  
+}
+
+.yoke-type-option,
+.ped-option-option {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+/* Fail Safe Column */
+.fail-safe-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.fail-safe-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #08549c;
+}
+
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.radio-label.disabled {
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.radio-label:not(.disabled) {
+  color: black;
+}
+
+/* Action Buttons Section */
+/* .action-buttons-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+} */
+
+.action-buttons-section {
+  display: flex;
+  gap: 24px; /* spacing between buttons and selected section */
+  margin-top: 24px;
+}
+
+.actuator-selected-section1{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.select-actuator-button,
+.configuration-button {
+  background-color: #08549c;
+  color: white;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+.select-actuator-button:hover,
+.configuration-button:hover {
+  background-color: #042a91;
+}
+
+.configuration-button {
+  padding: 8px 16px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;  
+  gap: 12px;            
+  align-items: center; 
+  width: 180px; 
+}
+
+.actuator-selected-section {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.actuator-selected-label {
+  margin-top: -23px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #08549c;
+}
+
+.actuator-selected-input {
+  width: 160px;
+  background-color: #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+}
+
+/* Editable Select Component */
+.editable-select {
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: 128px;
+  border: 1px solid #d1d5db;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .top-section,
+  .bottom-section {
+    flex-direction: column;
+  }
+  
+  .valve-info-section,
+  .torque-section,
+  .image-placeholder-section,
+  .actuator-selector-section {
+    width: 100%;
+  }
+  
+  .torque-grid,
+  .actuator-selector-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .actuator-selector-section {
+    height: auto;
+  }
+}
